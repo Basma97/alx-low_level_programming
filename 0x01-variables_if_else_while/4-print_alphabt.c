@@ -11,7 +11,10 @@ int main(void)
 	for (i = 'a' ; i <= 'z' ; i++)
 	{
 		if (i != 'q' || 'e')
-			putchar(i);
+		{
+			i++;
+			putchar (i);
+		}
 	}
 	putchar ('\n');
 
