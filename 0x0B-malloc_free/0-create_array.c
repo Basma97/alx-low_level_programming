@@ -1,28 +1,19 @@
 #include "main.h"
 /**
- * _strdup - program
- * @str: parameter
- * Return: 0
+ * create_array - program
+ * @size: parameter
+ * @c: parameter
+ * Return: n
  */
-char *_strdup(char *str)
+char *create_array(unsigned int size, char c)
 {
-	int i = 0, size = 0;
-	char *m;
+	char *n = malloc(size);
 
-	if (str == NULL)
-		return (NULL);
+	if (size == 0 || n == 0)
+		return (0);
 
-	for (; str[size] != '\0'; size++)
-	;
+	while (size--)
+		n[size] = c;
 
-	m = malloc(size * sizeof(*str) + 1);
-
-	if (m == 0)
-		return (NULL);
-	else if
-	{
-		for (; i < size; i++)
-			m[i] = str[i];
-	}
-	return (m);
+	return (n);
 }
