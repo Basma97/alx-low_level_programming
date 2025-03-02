@@ -16,11 +16,11 @@ int main(void)
 		{
 			if (firstD != secondD)
 			{
-				putchar ((firstD / 10) + '0');
-				putchar ((firstD % 10) + '0');
+				putchar ((firstD / 10) + 48);
+				putchar ((firstD % 10) + 48);
 				putchar (' ');
-				putchar ((secondD / 10) + '0');
-				putchar ((secondD % 10) + '0');
+				putchar ((secondD / 10) + 48);
+				putchar ((secondD % 10) + 48);
 				if (firstD !=  98 || secondD != 99)
 				{
 					putchar (',');
