@@ -5,29 +5,31 @@
 */
 int main(void)
 {
-	int i, n, k, l;
+	int firstD, secondD;
 
-	for (i = 0; i < 10; i++)
+	firstD = 0;
+
+	while (firstD <= 99)
 	{
-		for (n = 0; n < 9; n++)
+		secondD = firstD;
+		while (secondD <= 99)
 		{
-			for (k = 0; k < 10; k++)
+			if (firstD != secondD)
 			{
-				for (l = n; l < 10; l++)
+				putchar ((firstD / 10) + '0');
+				putchar ((firstD % 10) + '0');
+				putchar (' ');
+				putchar ((secondD / 10) + '0');
+				putchar ((secondD % 10) + '0');
+				if (firstD !=  98 || secondD != 99)
 				{
-					putchar(i + '0');
-					putchar(n + '0');
-					putchar(' ');
-					putchar(k + '0');
-					putchar(l + '0');
-					if (i == 9 && n == 8 && k == 9 && l == 9)
-						break;
-					putchar(',');
-					putchar(' ');
+					putchar (',');
+					putchar (' ');
 				}
 			}
+			secondD++;
 		}
+		firstD++;
 	}
-	putchar('\n');
 	return (0);
 }
