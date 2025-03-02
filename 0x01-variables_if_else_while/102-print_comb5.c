@@ -14,13 +14,13 @@ int main(void)
 		secondD = firstD;
 		while (secondD <= 99)
 		{
-			if (firstD != secondD)
+			if (secondD != firstD)
 			{
-				putchar ((firstD / 10) + 48);
-				putchar ((firstD % 10) + 48);
+				putchar ((firstD / 10) + '0');
+				putchar ((firstD % 10) + '0');
 				putchar (' ');
-				putchar ((secondD / 10) + 48);
-				putchar ((secondD % 10) + 48);
+				putchar ((secondD / 10) + '0');
+				putchar ((secondD % 10) + '0');
 				if (firstD !=  98 || secondD != 99)
 				{
 					putchar (',');
