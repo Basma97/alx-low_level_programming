@@ -31,5 +31,6 @@ int main(void)
 		}
 		firstD++;
 	}
+	putchar ('\n');
 	return (0);
 }
